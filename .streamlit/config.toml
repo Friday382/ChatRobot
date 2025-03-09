@@ -1,0 +1,7 @@
+[client]
+showSidebarNavigation = false
+
+[theme]
+base = "dark"
+primaryColor = "#FF4B5D"  # 主色调：红色
+backgroundColor = "#0E1117"  # 背景颜色：深灰色

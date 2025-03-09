@@ -2,13 +2,14 @@ import streamlit as st
 from langchain.memory import ConversationBufferMemory
 
 from local_utils import get_response
-if st.button('main'):
-    st.switch_page('main1.py')
 
 # 左侧导航栏
 with st.sidebar:
+    if st.button('返回'):
+        st.switch_page('pages/main1.py')
     API_KEY = st.text_input('请输入本地模型API')
     st.markdown('[获取通义API_KEY](https://bailian.console.aliyun.com/?apiKey=1#/api-key)')
+
 
 # 标题
 st.title('test1')
